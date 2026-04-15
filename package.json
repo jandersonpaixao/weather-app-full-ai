@@ -1,0 +1,11 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=src/config/.env src/server.js",
+    "dev": "node --watch --env-file=src/config/.env src/server.js",
+    "test": "node --test --env-file=src/config/.env"
+  }
+}
