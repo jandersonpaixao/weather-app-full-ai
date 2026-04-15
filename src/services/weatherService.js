@@ -1,4 +1,4 @@
-import { getCachedWeather, setCachedWeather } from "./weatherCache.js";
+import { getCachedWeather, setCachedWeather } from "./cache/weatherCache.js";
 
 export async function getWeatherByCity(city) {
   const cachedWeather = getCachedWeather(city);
@@ -59,4 +59,4 @@ export async function getWeatherByCities(cities) {
 
   return results;
 }
-export { clearWeatherCache } from "./weatherCache.js";
+export { clearWeatherCache } from "./cache/weatherCache.js";
